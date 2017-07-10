@@ -7,37 +7,50 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     
 </head>
+
+<style>
+    h2 {
+        margin-top: 40px;
+        font-size: 18px;
+        background-color: #0f0;
+        text-align: center;
+    }
+</style>
 <body>
     <form>
         <h1 id="title">Project 3: Survey Form</h1>
         <div class="jumbotron container-fluid">
-            <div class="section">
+            <div class="container col-xs-9">
                 <input name="name" required="" placeholder="Your Full Name" type="text">
                 <input name="email" required="" placeholder="Your email Address" type="email">
                 <input name="age" required="" placeholder="Your Age" type="number" min="18" max="99">
             </div>
             
-            <div class="section">
+            <div class="container col-xs-9">
+                <h2>SEX:</h2>
                 <label><input type="radio" name="gender" required="">Male</label>
                 <label><input type="radio" name="gender" required="">Female</label>
                 <label><input type="radio" name="gender" required="">Intersex</label>
             </div>
         
-            <div class="section">
+            <div class="container col-xs-9">
+                <h2>Spoken Languages:</h2>
                 <label><input type="checkbox" name="languages">English</label>
                 <label><input type="checkbox" name="languages">Spanish</label>
                 <label><input type="checkbox" name="languages">French</label>
             </div>
             
-            <div class="section">
+            <div class="container col-xs-9">
+                <h2>Favorite Flavor:</h2>
                 <select name="icecream">
                     <option>Vanilla</option>
                     <option>Chocolate</option>
                     <option>Caramel</option>
                 </select>
             </div>
-            
-            <div class="section">
+            <p></p>
+            <p></p>
+            <div class="container col-md-9">
                 <textarea name="comments">Comments Welcome</textarea>
             </div>
             
