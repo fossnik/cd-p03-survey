@@ -13,34 +13,36 @@
         margin-top: 40px;
         font-size: 18px;
         background-color: #0f0;
-        text-align: center;
+        text-align: left;
+        width: 50%;
     }
 </style>
 <body>
     <form>
         <h1 id="title">Project 3: Survey Form</h1>
         <div class="jumbotron container-fluid">
-            <div class="container col-xs-9">
+            <div class="form-group">
+                <h2>Personal Contact Info:</h2>
                 <input name="name" required="" placeholder="Your Full Name" type="text">
                 <input name="email" required="" placeholder="Your email Address" type="email">
                 <input name="age" required="" placeholder="Your Age" type="number" min="18" max="99">
             </div>
             
-            <div class="container col-xs-9">
-                <h2>SEX:</h2>
+            <div class="form-group">
+                <h2>Sex:</h2>
                 <label><input type="radio" name="gender" required="">Male</label>
                 <label><input type="radio" name="gender" required="">Female</label>
                 <label><input type="radio" name="gender" required="">Intersex</label>
             </div>
         
-            <div class="container col-xs-9">
+            <div class="form-group">
                 <h2>Spoken Languages:</h2>
                 <label><input type="checkbox" name="languages">English</label>
                 <label><input type="checkbox" name="languages">Spanish</label>
                 <label><input type="checkbox" name="languages">French</label>
             </div>
             
-            <div class="container col-xs-9">
+            <div class="form-group">
                 <h2>Favorite Flavor:</h2>
                 <select name="icecream">
                     <option>Vanilla</option>
@@ -50,11 +52,12 @@
             </div>
             <p></p>
             <p></p>
-            <div class="container col-md-9">
+            <div class="form-group">
+                <h2>Comment Section:</h2>
                 <textarea name="comments">Comments Welcome</textarea>
             </div>
             
-        <button type="btn button">Submit</button>
+        <button type="btn button input-group">Submit</button>
         </div>
     </form>
 </body>
