@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BetaFCC Survey Form</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+</head>
+<body>
+    <form>
+        <h1 id="title">Project 3: Survey Form</h1>
+        <div class="jumbotron container-fluid">
+            <div class="section">
+                <input name="name" required="" placeholder="Your Full Name" type="text">
+                <input name="email" required="" placeholder="Your email Address" type="email">
+                <input name="age" required="" placeholder="Your Age" type="number" min="18" max="99">
+            </div>
+            
+            <div class="section">
+                <label><input type="radio" name="gender" required="">Male</label>
+                <label><input type="radio" name="gender" required="">Female</label>
+                <label><input type="radio" name="gender" required="">Intersex</label>
+            </div>
+        
+            <div class="section">
+                <label><input type="checkbox" name="languages">English</label>
+                <label><input type="checkbox" name="languages">Spanish</label>
+                <label><input type="checkbox" name="languages">French</label>
+            </div>
+            
+            <div class="section">
+                <select name="icecream">
+                    <option>Vanilla</option>
+                    <option>Chocolate</option>
+                    <option>Caramel</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <textarea name="comments">Comments Welcome</textarea>
+            </div>
+            
+        <button type="btn button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
